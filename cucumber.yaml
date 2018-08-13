@@ -1,2 +1,5 @@
 ---
-default: --format html --out=reports/features.html
+default: -p html -p bdd 
+html: --format html --out=reports/features.html
+dot: --format progress
+bdd: --format pretty
