@@ -9,6 +9,7 @@ Feature: Login
     Given eu acesso a pagina inicial
      When eu efetuo login com "isabela@freedom.com.br" e senha "123"
      Then devo entrar na tela principal
+     And efetuo Logout
 
   Scenario: Login invalido
     Given eu acesso a pagina inicial

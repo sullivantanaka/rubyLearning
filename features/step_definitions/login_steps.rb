@@ -3,15 +3,15 @@ Given("eu acesso a pagina inicial") do
   end
   
 When("eu efetuo login com {string} e senha {string}") do |email, senha|
-    #find('input[name=username]').set email
-    #find('input[name=password]').set senha
-    #click_button 'Entrar'
-    # ou apenas chame o metodo abaixo (tecnicas de pageobject)
-    LoginPage.new.fazLogin(email,senha)
+    LoginPage.new.fazLogin(email,senha) #definido em pages.rb
   end
   
 Then("devo entrar na tela principal") do
   expect(page).to have_content "MENU PRINCIPAL"
+  end
+
+Then("efetuo Logout") do
+  click_link "Logout" 
   end
   
 Then("vejo a mensagem {string}") do |mensagem|
