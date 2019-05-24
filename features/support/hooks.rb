@@ -5,5 +5,4 @@ After do |scenario|
     screenshot = "reports/screenshots/#{nome_cenario}.png"
     page.save_screenshot(screenshot)
     embed(screenshot, 'image/png', 'Evidencia')
-
 end

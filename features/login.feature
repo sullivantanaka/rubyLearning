@@ -24,5 +24,8 @@ Feature: Login
   Scenario: Senha invalida
     Given eu acesso a pagina inicial
      When eu efetuo login com "isabela@freedom.com.br" e senha "abc123"
-     Then vejo a mensagem "O e-mail e/ou senha não conferem"
+     Then vejo a mensagem "O e-mail e/ou senha não conferem"  
+  
+     
+     
 
